@@ -33,7 +33,7 @@ username.send_keys("user")
 
 password = driver.find_element_by_id("password")
 password.clear()
-password.send_keys("pwd")
+password.send_keys(input("Type your password and press enter: "))
 
 #Navigate to download link for inventory .csv file
 driver.find_element_by_class_name("ping-button.normal.allow").click()
